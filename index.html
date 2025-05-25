@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>ভুলেও ভর্তি হইও না!</title>
+  <style>
+    body {
+      font-family: 'Siyam Rupali', sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      color: #333;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button {
+      background-color: crimson;
+      color: white;
+      border: none;
+      padding: 12px;
+      cursor: pointer;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>ভুলেও ভর্তি হইও না!</h2>
+    <p class="note">* ফর্মটি পূরণ করলে আপনি স্বয়ংক্রিয়ভাবে আমাদের মজার ক্লাবে ঢুকে যাবেন!</p>
+    <form onsubmit="return showAlert()">
+      <label>আপনার নাম:</label>
+      <input type="text" name="name" placeholder="যেমন: জোনাকি রায়" required>
+
+      <label>ক্লাস:</label>
+      <select name="class">
+        <option>৬ষ্ঠ</option>
+        <option>৭ম</option>
+        <option>৮ম</option>
+        <option>৯ম</option>
+        <option>১০ম</option>
+        <option>আমি কিছুই জানি না</option>
+      </select>
+
+      <label>পছন্দের বিষয়:</label>
+      <input type="text" name="subject" placeholder="যেমন: গণিত (না লিখলে ‘কাব্য’ ধরে নিবো)">
+
+      <button type="submit">ভর্তি হয়ে যাই!</button>
+    </form>
+  </div>
+
+  <script>
+    function showAlert() {
+      alert("তুমি ভর্তি হয়েছো আমাদের মজার দলে! 🥳 (নকল আইডি প্রস্তুত হচ্ছে...)");
+      return false; // prevent actual form submission
+    }
+  </script>
+</body>
+</html>
